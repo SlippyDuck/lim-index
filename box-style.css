@@ -1,108 +1,140 @@
-body{
-			background-color: #0b3954;
-			padding: 30px;
-		}
-		div.con{
-			margin: 0 auto;
-			max-height: 90%;
-			max-width: 70%;
-			background-color: #ADAEB3;
-			padding-left: 20px;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: flex-start;
-			position: relative;
-			padding-bottom: 40px;
-		}
-		div.one,
-		div.two,
-		div.three{
-			flex: 1;
-			max-width: 25%;
-			padding: 15px;
-			text-align: center;
-		}
-		div.one{
-			background-color: #ffc857;
-			border: 4px solid #0D0E47;
-		}
-		div.two{
-			background-color: #c5283d;
-			border: 4px solid #6D0000;
-		}
-		div.three{
-			background-color: #DA916C;
-			border: 4px solid #BB7C58;
-		}
-		.rounded-text-box {
-			background-color: black;
-			border-radius: 20px;
-			padding: 15px;
-			width: 30%;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-		}
-		.rounded-text-box button {
-			width: 100%;
-			padding: 10px;
-			background-color: #ffc857;
-			border: none;				
-			color: white;
-			font-size: 16px;
-			cursor: pointer;
-			border-radius: 10px;
-		}
+body {
+    background-color: #0b3954;
+    padding: 30px;
+}
 
-		.rounded-text-box button a {
-			text-decoration: none;
-			color: white;
-		}
-		.rounded-text-box button a:hover {
-			color: blue;
-		}
-		h2{
-			color: #FFFFFF;
-		}
-		p{
-			max-height: 200px;
-			max-width: 300px;
-			
-		}
-		p.one{
-			overflow: hidden;
-			background-color: #e9724c;
-		}
-		p.two{
-			overflow: scroll;
-			background-color: #481d24;
-			color: #FFF;
-		}
-		p.three{
-			overflow: scroll;
-			background-color: #E8AF4F;
-		}
-		a:link{
-			color: red;
-		}
-		a:visited{
-			color: green;
-		}
-		a:hover{
-			color: blue;
-		}
-		a:active{
-			color: hotpink;
-		}
-		.flex-container{
-			display: flex;
-			justify-content: center;
-			padding-bottom: 20px;
-		}
-		.more-link {
-			align-self: flex-end;
-			position: absolute;
-			bottom: 10px;
-			left: 10px;
-		}
+div.con {
+    margin: 0 auto;
+    max-height: 90%;
+    max-width: 70%;
+    background-color: #ADAEB3;
+    padding: 20px;
+    position: relative;
+    padding-bottom: 40px;
+    border: 2px solid #0D0E47;
+}
+
+div.one,
+div.two,
+div.three {
+    float: left;
+    width: 25%; /* Changed to width instead of max-width for better layout */
+    padding: 15px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+div.one {
+    background-color: #ffc857;
+    border: 4px solid #0D0E47;
+}
+
+div.two {
+    background-color: #c5283d;
+    border: 4px solid #6D0000;
+}
+
+div.three {
+    background-color: #DA916C;
+    border: 4px solid #BB7C58;
+}
+
+.rounded-text-box {
+    background-color: black;
+    border-radius: 20px;
+    padding: 15px;
+    width: 30%;
+    margin: 0 auto 20px;
+}
+
+.rounded-text-box button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffc857;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    margin: 5px 0;
+}
+
+.rounded-text-box button a {
+    text-decoration: none;
+    color: white;
+}
+
+.rounded-text-box button a:hover {
+    color: blue;
+}
+
+h2 {
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+p {
+    max-height: 200px;
+    max-width: 300px;
+    margin: 10px 0;
+}
+
+p.one {
+    overflow: hidden;
+    background-color: #e9724c;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+p.two {
+    overflow: scroll;
+    background-color: #481d24;
+    color: #FFF;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+p.three {
+    overflow: scroll;
+    background-color: #E8AF4F;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    color: blue;
+}
+
+a:active {
+    color: hotpink;
+}
+
+.flex-container {
+    padding-bottom: 20px;
+    overflow: auto;
+}
+
+.more-link {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #FFF;
+    background-color: #0b3954;
+    border: 1px solid #FFC857;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.more-link:hover {
+    color: blue;
+    background-color: #333;
+}
